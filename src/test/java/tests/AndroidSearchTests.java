@@ -31,7 +31,7 @@ public class AndroidSearchTests extends TestBase {
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text"))
                     .sendKeys("Porsche");
         });
-        step("VCheck description found content", () ->
+        step("Check description found content", () ->
                 $(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_description"))
                         .shouldHave(text("German automobile manufacturer specializing")));
     }
